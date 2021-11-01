@@ -6,6 +6,8 @@ from rest_framework_simplejwt.views import (
 )
 from .views import MyTokenObtainPairView, index
 from django.views.generic import TemplateView
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('api/auth/', include('rest_framework.urls', namespace='rest_framework')),
@@ -16,5 +18,5 @@ urlpatterns = [
     path('api/quiz/', include('Quiz.urls')),
     path('api/user/', include('Account.urls')),
     re_path('.*/', index, name='index'),
-]
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
