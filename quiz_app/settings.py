@@ -165,3 +165,7 @@ AUTH_USER_MODEL = 'Account.User'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'dist/static'),
 ]
+
+# for prod
+# run collect static and put static files here
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
