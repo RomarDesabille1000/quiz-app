@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkreact_webpack_setup=self.webpackChunkreact_webpack_setup||[]).push([[138],{5738:(e,t,a)=>{a.r(t),a.d(t,{default:()=>n});var c=a(7294);const n=function(){return c.createElement("div",{className:"flex justify-center align-center text-2xl"},"Page Not Found")}}}]);
